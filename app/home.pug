@@ -1,0 +1,31 @@
+doctype html
+html(lang='')
+  include partials/head.pug
+  body.main
+    #gradient.mdl-layout.mdl-js-layout
+      include partials/header-scrollable.pug
+      main.mdl-layout__content
+        .page-content
+          section.mdl-typography--text-center
+              .txt-passions
+                | Text
+
+              //.col-sm-12
+              //.card-container.mdl-grid
+                - for(var i=0; i<projects.length; i++)
+
+                  .portfolio-card.mdl-cell.mdl-cell--3-col.mdl-cell--4-col-tablet.mdl-cell--4-col-phone.mdl-card.mdl-shadow--2dp
+                    .mdl-card__media
+                      img(src="images/img_portfolio/Previews/"+projects[i].cover)
+                    .mdl-card__title
+                      .mdl-card__title-text
+                        = projects[i].title
+                    //.mdl-card__supporting-text
+                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      | Aenan convallis.
+                    .mdl-card__actions.mdl-card--border
+                      a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href=projects[i].link target="_blank")
+                        | View
+
+      include partials/footer_mini.pug
+    include partials/scripts.pug

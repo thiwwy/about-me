@@ -1,0 +1,91 @@
+{
+  "projects" : [{
+    "id": "aegis",
+    "title": "Aegis",
+    "text": "Lorem ipsum bla bla",
+    "cover": "Aegis.jpg",
+    "images" : ["img_1_1", "img_1_2", "img_1_3"],
+    "link" : "http://www.aegis.uk.com/"
+  },
+
+  {
+  "id": "leaderbet",
+  "title": "Leaderbet",
+  "text": "Lorem ipsum bla bla",
+  "cover": "Leaderbet.jpg",
+  "images" : ["img_2_1", "img_2_2", "img_2_3"],
+  "link" : "https://www.lbgmobile.com/"
+  },
+
+  {
+  "id": "HM",
+  "title": "Hudson&Marshall",
+  "text": "Lorem ipsum bla bla",
+  "cover": "HM.jpg",
+  "images" : ["img_3_1", "img_3_2", "img_3_3"],
+  "link" : "https://www.hudsonandmarshall.com/"
+  },
+
+  {
+  "id": "thiwwyDesign",
+  "title": "thiwwy design",
+  "text": "Lorem ipsum bla bla",
+  "cover": "thiwwyDesign.jpg",
+  "images" : ["img_2_1", "img_2_2", "img_2_3"],
+  "link" : "http://www.thiwwydesign.eu/"
+  },
+
+  {
+  "id": "zafran",
+  "title": "Zafran",
+  "text": "Lorem ipsum bla bla",
+  "cover": "Zafran.jpg",
+  "images" : ["img_2_1", "img_2_2", "img_2_3"],
+  "link" : "http://www.zafranhotel.it/"
+  },
+
+  {
+  "id": "paletty",
+  "title": "Paletty",
+  "text": "Lorem ipsum bla bla",
+  "cover": "Paletty.jpg",
+  "images" : ["img_2_1", "img_2_2", "img_2_3"],
+  "link" : "https://agile-oasis-94747.herokuapp.com/"
+  },
+
+  {
+  "id": "starwars",
+  "title": "StarWars",
+  "text": "Lorem ipsum bla bla",
+  "cover": "StarWars.jpg",
+  "images" : ["img_2_1", "img_2_2", "img_2_3"],
+  "link" : "https://infinite-refuge-55109.herokuapp.com/"
+  },
+
+  {
+  "id": "codepen",
+  "title": "Code Pen",
+  "text": "Visit my CodePen!",
+  "cover": "CodePen.jpg",
+  "images" : ["img_3_1", "img_3_2", "img_3_3"],
+  "link" : "http://codepen.io/thiwwy/"
+  },
+
+  {
+  "id": "github",
+  "title": "Github",
+  "text": "Visit my github!",
+  "cover": "github.jpg",
+  "images" : ["img_4_1", "img_4_2", "img_4_3"],
+  "link" : "https://github.com/thiwwy"
+  },
+
+  {
+  "id": "more",
+  "title": "More...",
+  "text": "Here some design.",
+  "cover": "More.jpg",
+  "images" : ["img_4_1", "img_4_2", "img_4_3"],
+  "link" : "https://drive.google.com/drive/folders/0B54O1j2ZKqxaNFV2Qmt1V3FmMEU?usp=sharing"
+  }]
+}

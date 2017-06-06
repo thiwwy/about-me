@@ -1,0 +1,43 @@
+//http://varunmalhotra.xyz/blog/
+//http://richmediagallery.com/tools/template-database#
+//https://jsfiddle.net/VamosErik88/HTHnW/651/
+//http://codepen.io/zavoloklom/full/dIgco
+
+//https://github.com/jakiestfu/Snap.js/
+//http://www.cssscript.com/demo/off-canvas-side-nav-with-adaptive-main-content/
+//http://www.cssscript.com/tag/side-menu/
+
+header.mdl-layout__header
+
+  .mdl-layout__header-row
+    //span.mdl-layout-title= title
+    img(style="height: 60px" src="images/img_portfolio/logo.svg")
+    .mdl-layout-spacer
+    //nav.mdl-navigation.mdl-layout--large-screen-only
+      a.mdl-navigation__link(href='#') Link1
+      a.mdl-navigation__link(href='#') Link2
+      a.mdl-navigation__link(href='#') Link3
+
+.mdl-layout__drawer.portfolio_drawer
+  //Picture
+  img(src="images/img_portfolio/logo_lateral.svg")
+  //Name
+  span.mdl-layout-title= author.name
+  nav.mdl-navigation
+    //Phone
+    a.mdl-navigation__link(href='callto:'+author.phone)
+      i.material-icons.md-18 &#xE0CD;
+      = " " + author.phone
+    //Email
+    a.mdl-navigation__link(href='mailto:'+author.email)
+      i.material-icons.md-18 &#xE0BE;
+      = "  " + author.email
+    //Web Site
+    a.mdl-navigation__link(href='#')
+      i.material-icons.md-18 &#xE894;
+      = "  " + author.website
+    //issuu
+    a.mdl-navigation__link(href=author.issuu target="blank")
+      i.icon.icon-issuu-01
+      //i.material-icons.md-18(style= "color: red") &#xE0BE;
+      = "  " + author.issuu

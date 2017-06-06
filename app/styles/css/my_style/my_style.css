@@ -1,0 +1,37 @@
+/*=================TXT Variables==============*/
+/* line 1, ../../my_style/style_part/generic_style.scss */
+section {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Raleway","Roboto","Helvetica","Arial",sans-serif;
+  padding: 80px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 9, ../../my_style/style_part/generic_style.scss */
+.txt-passions {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 16, ../../my_style/style_part/generic_style.scss */
+#gradient {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 23, ../../my_style/style_part/generic_style.scss */
+.transparent {
+  background: none;
+  box-shadow: none;
+}
+
+/* line 28, ../../my_style/style_part/generic_style.scss */
+.my-footer {
+  color: rgba(255, 255, 255, 0.75);
+  height: 10px;
+}
