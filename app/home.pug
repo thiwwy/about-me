@@ -6,7 +6,7 @@ html(lang='')
       include partials/header-scrollable.pug
       main.mdl-layout__content
         .page-content
-          section.mdl-typography--text-center
+          section#passionsBox.mdl-typography--text-center
 
               - for(var i=0; i<passions.length; i++)
                 a.txt-passions(onclick = "AboutMePassions( ' " + passions[i].description + " ' )")
@@ -29,8 +29,11 @@ html(lang='')
                       a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href=projects[i].link target="_blank")
                         | View
 
-      section#feedback_box.mdl-typography--text-center.description
-        = author.description
+      section#footer_box.mdl-typography--text-center
+        
+          #feedback_box.transparent.description  
+            = author.description
 
-      include partials/footer_mini.pug
+          include partials/footer_mini.pug
+
     include partials/scripts.pug

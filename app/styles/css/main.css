@@ -13831,17 +13831,24 @@ section {
 }
 
 /* line 16, ../my_style/style_part/generic_style.scss */
-#feedback_box {
-  bottom: 0;
+#passionsBox {
+  width: 100%;
+  min-height: 500px;
+}
+
+/* line 21, ../my_style/style_part/generic_style.scss */
+#footer_box {
   border-top: 2px solid rgba(255, 255, 255, 0.75);
-  padding: 25px;
-  font-size: 18px;
-  text-align: left;
   width: calc(100% - 81px * 2);
-  height: 70px;
 }
 
 /* line 26, ../my_style/style_part/generic_style.scss */
+#feedback_box {
+  padding: 25px;
+  text-align: left;
+}
+
+/* line 31, ../my_style/style_part/generic_style.scss */
 .txt-passions {
   color: rgba(255, 255, 255, 0.75);
   font-size: 34px;
@@ -13849,13 +13856,13 @@ section {
   line-height: 40px;
 }
 
-/* line 33, ../my_style/style_part/generic_style.scss */
+/* line 38, ../my_style/style_part/generic_style.scss */
 .transparent {
   background: none;
   box-shadow: none;
 }
 
-/* line 38, ../my_style/style_part/generic_style.scss */
+/* line 43, ../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
