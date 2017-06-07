@@ -9,14 +9,6 @@ section {
 }
 
 /* line 9, ../../my_style/style_part/generic_style.scss */
-.txt-passions {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 40px;
-}
-
-/* line 16, ../../my_style/style_part/generic_style.scss */
 #gradient {
   width: 100%;
   height: 100%;
@@ -24,22 +16,8 @@ section {
   margin: 0px;
 }
 
-/* line 23, ../../my_style/style_part/generic_style.scss */
-.transparent {
-  background: none;
-  box-shadow: none;
-}
-
-/* line 28, ../../my_style/style_part/generic_style.scss */
-.my-footer {
-  color: rgba(255, 255, 255, 0.75);
-  height: 30px;
-  padding: 16px;
-  padding-left: 55px;
-}
-
-/* line 35, ../../my_style/style_part/generic_style.scss */
-.feedback_box {
+/* line 16, ../../my_style/style_part/generic_style.scss */
+#feedback_box {
   bottom: 0;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   padding: 25px;
@@ -47,6 +25,28 @@ section {
   text-align: left;
   width: calc(100% - 81px * 2);
   height: 70px;
+}
+
+/* line 26, ../../my_style/style_part/generic_style.scss */
+.txt-passions {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 33, ../../my_style/style_part/generic_style.scss */
+.transparent {
+  background: none;
+  box-shadow: none;
+}
+
+/* line 38, ../../my_style/style_part/generic_style.scss */
+.my-footer {
+  color: rgba(255, 255, 255, 0.75);
+  height: 30px;
+  padding: 16px;
+  padding-left: 55px;
 }
 
 /* line 1, ../../my_style/style_part/side_panel.scss */
