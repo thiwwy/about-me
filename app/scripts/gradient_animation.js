@@ -1,10 +1,27 @@
-var colors = new Array(
+/* ========================== GRADIENT ANIMATION ===================== */
+/* Manage the animation of the gradient in the Background */
+
+/*var colors = new Array(
   [62,35,255],
   [60,255,60],
   [255,35,98],
   [45,175,230],
   [255,0,255],
-  [255,128,0]);
+  [255,128,0]);*/
+
+var colors = new Array(
+  [233,30,99],  /* $palette-pink-500 */
+  [156,39,176], /* $palette-purple-500 */
+  [103,58,183], /* $palette-deep-purple-500 */
+  [63,81,181],  /* $palette-indigo-500 */
+  [33,150,243], /* $palette-blue-500 */
+  [0,188,212],  /* $palette-light-blue-500 */
+  [0,150,136],  /* $palette-teal-500 */
+  [76,175,80],  /* $palette-green-500 */
+  [139,195,74], /* $palette-lime-500 */
+  [255,235,59], /* $palette-yellow-500 */
+  [255,152,0],  /* $palette-orange-500 */
+  [255,87,34]); /* $palette-deep-orange-500 */
 
 var step = 0;
 //color table indices for: 

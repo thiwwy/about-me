@@ -6,9 +6,8 @@ html(lang='')
       include partials/header-scrollable.pug
       main.mdl-layout__content
         .page-content
-          section.mdl-typography--text-center
-              .txt-passions
-                | Text
+          section.mdl-typography--text-center.txt-passions
+              | Text
 
               //.col-sm-12
               //.card-container.mdl-grid
@@ -26,6 +25,9 @@ html(lang='')
                     .mdl-card__actions.mdl-card--border
                       a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href=projects[i].link target="_blank")
                         | View
+
+      section.mdl-typography--text-center.feedback_box
+          | Text
 
       include partials/footer_mini.pug
     include partials/scripts.pug

@@ -33,5 +33,18 @@ section {
 /* line 28, ../../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
-  height: 10px;
+  height: 30px;
+  padding: 16px;
+  padding-left: 50px;
+}
+
+/* line 35, ../../my_style/style_part/generic_style.scss */
+.feedback_box {
+  bottom: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  padding: 25px;
+  font-size: 18px;
+  text-align: left;
+  width: calc(100% - 56px * 2);
+  height: 70px;
 }
