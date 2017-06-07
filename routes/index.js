@@ -1,13 +1,13 @@
 var authorJSON = require("../data/author.json")
-var projectsJSON = require("../data/projects.json")
+var passionsJSON = require("../data/passions.json")
 
 var author = authorJSON;
-var projects = projectsJSON.projects;
+var passions = passionsJSON.passions;
 
 exports.home = function(req, res){
   res.render('home', {
-    title : "thiwwy design",
+    title : "About Silvia D'Auria",
     author: author,
-    projects: projects
+    passions: passions
   });
 };

@@ -19,3 +19,9 @@
   width: 170px !important;
   margin: 10px auto !important;
 }
+
+/* line 19, ../../../my_style/style_part/side_panel.scss */
+.mdl-layout__drawer-button {
+  opacity: 0.5;
+  margin: 0;
+}

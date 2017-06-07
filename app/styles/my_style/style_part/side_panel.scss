@@ -1,0 +1,22 @@
+.portfolio_drawer{
+  width: 270px;
+  transform: translateX(-270px);
+}
+
+.portfolio_drawer a{
+  padding: 16px 20px !important;
+}
+
+.portfolio_drawer span{
+  padding: 16px 20px !important;
+}
+
+.portfolio_drawer img{
+  width: 170px !important;
+  margin: 10px auto !important;
+}
+
+.mdl-layout__drawer-button{
+  opacity: 0.5;
+  margin: 0;
+}

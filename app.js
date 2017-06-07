@@ -17,7 +17,6 @@ app.use(express.static('app'));
 
 app.get('/', routes.home)
 
-
 /*app.get('/', function(req, res) {
     //res.sendfile('./app/index.html');
     res.render('index',{

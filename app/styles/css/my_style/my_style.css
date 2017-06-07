@@ -35,7 +35,7 @@ section {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
   padding: 16px;
-  padding-left: 50px;
+  padding-left: 55px;
 }
 
 /* line 35, ../../my_style/style_part/generic_style.scss */
@@ -45,6 +45,34 @@ section {
   padding: 25px;
   font-size: 18px;
   text-align: left;
-  width: calc(100% - 56px * 2);
+  width: calc(100% - 81px * 2);
   height: 70px;
+}
+
+/* line 1, ../../my_style/style_part/side_panel.scss */
+.portfolio_drawer {
+  width: 270px;
+  transform: translateX(-270px);
+}
+
+/* line 6, ../../my_style/style_part/side_panel.scss */
+.portfolio_drawer a {
+  padding: 16px 20px !important;
+}
+
+/* line 10, ../../my_style/style_part/side_panel.scss */
+.portfolio_drawer span {
+  padding: 16px 20px !important;
+}
+
+/* line 14, ../../my_style/style_part/side_panel.scss */
+.portfolio_drawer img {
+  width: 170px !important;
+  margin: 10px auto !important;
+}
+
+/* line 19, ../../my_style/style_part/side_panel.scss */
+.mdl-layout__drawer-button {
+  opacity: 0.5;
+  margin: 0;
 }
