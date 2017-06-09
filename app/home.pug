@@ -3,13 +3,12 @@ html(lang='')
   include partials/generic/head
   body.main
     #gradient.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
-      include partials/about_me/header-tabs-about_me
+      include partials/generic/header-tabs
       main.mdl-layout__content
         .page-content
-          include partials/generic/passionsBox
+          include partials/generic/about_me
 
-          section#feedback_box.transparent.description  
-            = author.description
+          include partials/generic/about_you
 
       include partials/generic/footer
 

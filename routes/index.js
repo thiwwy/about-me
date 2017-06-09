@@ -4,16 +4,8 @@ var passionsJSON = require("../data/passions.json")
 var author = authorJSON;
 var passions = passionsJSON.passions;
 
-exports.about_me = function(req, res){
-  res.render('about_me', {
-    title : "About Silvia D'Auria",
-    author: author,
-    passions: passions
-  });
-};
-
-exports.about_you = function(req, res){
-  res.render('about_you', {
+exports.home = function(req, res){
+  res.render('home', {
     title : "About Silvia D'Auria",
     author: author,
     passions: passions
