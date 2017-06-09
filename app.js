@@ -15,7 +15,9 @@ app.set('views', path.join(__dirname, '/app'));
 
 app.use(express.static('app'));
 
-app.get('/', routes.home)
+app.get('/', routes.about_me)
+app.get('/about_me', routes.about_me)
+app.get('/about_you', routes.about_you)
 
 /*app.get('/', function(req, res) {
     //res.sendfile('./app/index.html');
