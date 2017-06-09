@@ -2,7 +2,7 @@ doctype html
 html(lang='')
   include partials/head.pug
   body.main
-    #gradient.mdl-layout.mdl-js-layout
+    #gradient.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
       include partials/header-scrollable.pug
       main.mdl-layout__content
         .page-content
@@ -29,11 +29,9 @@ html(lang='')
                       a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href=projects[i].link target="_blank")
                         | View
 
-      section#footer_box.mdl-typography--text-center
-        
-          #feedback_box.transparent.description  
+          section#feedback_box.transparent.description  
             = author.description
 
-          include partials/footer_mini.pug
+      include partials/footer_mini.pug
 
     include partials/scripts.pug

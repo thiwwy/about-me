@@ -15,17 +15,15 @@ section{
 
 #passionsBox{
   width: 100%;
-  min-height: 500px;
-}
-
-#footer_box{
-  border-top: 2px solid rgba(255, 255, 255, 0.75);
-  width: calc(100% - 81px * 2);
+  min-height: 100px;
+  height: 40vh;
 }
 
 #feedback_box{
   padding: 25px;
   text-align: left;
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  width: calc(100% - 81px * 2);
 }
 
 .txt-passions{

@@ -13833,22 +13833,19 @@ section {
 /* line 16, ../my_style/style_part/generic_style.scss */
 #passionsBox {
   width: 100%;
-  min-height: 500px;
+  min-height: 100px;
+  height: 40vh;
 }
 
-/* line 21, ../my_style/style_part/generic_style.scss */
-#footer_box {
+/* line 22, ../my_style/style_part/generic_style.scss */
+#feedback_box {
+  padding: 25px;
+  text-align: left;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   width: calc(100% - 81px * 2);
 }
 
-/* line 26, ../my_style/style_part/generic_style.scss */
-#feedback_box {
-  padding: 25px;
-  text-align: left;
-}
-
-/* line 31, ../my_style/style_part/generic_style.scss */
+/* line 29, ../my_style/style_part/generic_style.scss */
 .txt-passions {
   color: rgba(255, 255, 255, 0.75);
   font-size: 34px;
@@ -13856,13 +13853,13 @@ section {
   line-height: 40px;
 }
 
-/* line 38, ../my_style/style_part/generic_style.scss */
+/* line 36, ../my_style/style_part/generic_style.scss */
 .transparent {
   background: none;
   box-shadow: none;
 }
 
-/* line 43, ../my_style/style_part/generic_style.scss */
+/* line 41, ../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
