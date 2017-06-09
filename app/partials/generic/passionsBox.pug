@@ -1,0 +1,5 @@
+section#passionsBox.mdl-typography--text-center
+
+    - for(var i=0; i<passions.length; i++)
+        a.txt-passions(onclick = "AboutMePassions( ' " + passions[i].description + " ' )")
+        = passions[i].name
