@@ -1,90 +1,9 @@
-/*=================TXT Variables==============*/
-/* line 1, ../../my_style/style_part/generic_style.scss */
-section {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Raleway","Roboto","Helvetica","Arial",sans-serif;
-  padding: 10px 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 9, ../../my_style/style_part/generic_style.scss */
-#gradient {
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-
-/* line 16, ../../my_style/style_part/generic_style.scss */
-#passionsBox {
-  width: 100%;
-  min-height: 100px;
-  height: 70vh;
-  width: calc(100% - 81px * 2);
-}
-
-/* line 24, ../../my_style/style_part/generic_style.scss */
-ul#passionsBox {
-  list-style-type: none;
-}
-
-/* line 28, ../../my_style/style_part/generic_style.scss */
-#feedback_box {
-  padding: 25px;
-  text-align: left;
-  border-top: 2px solid rgba(255, 255, 255, 0.75);
-  width: calc(100% - 81px * 2);
-}
-
-/* line 35, ../../my_style/style_part/generic_style.scss */
-.transparent {
-  background: none;
-  box-shadow: none;
-}
-
-/* line 40, ../../my_style/style_part/generic_style.scss */
-.my-footer {
-  color: rgba(255, 255, 255, 0.75);
-  height: 30px;
-  padding: 16px;
-  padding-left: 55px;
-}
-
-/* line 1, ../../my_style/style_part/side_panel.scss */
-.portfolio_drawer {
-  width: 270px;
-  transform: translateX(-270px);
-}
-
-/* line 6, ../../my_style/style_part/side_panel.scss */
-.portfolio_drawer a {
-  padding: 16px 20px !important;
-}
-
-/* line 10, ../../my_style/style_part/side_panel.scss */
-.portfolio_drawer span {
-  padding: 16px 20px !important;
-}
-
-/* line 14, ../../my_style/style_part/side_panel.scss */
-.portfolio_drawer img {
-  width: 170px !important;
-  margin: 10px auto !important;
-}
-
-/* line 19, ../../my_style/style_part/side_panel.scss */
-.mdl-layout__drawer-button {
-  opacity: 0.5;
-  margin: 0;
-}
-
 /* ================ VARIABLES ================*/
 /* ================== MIXINS =================*/
 /*================================================================
 Default Styles
 ================================================================*/
-/* line 22, ../../my_style/style_part/parallax.scss */
+/* line 22, ../../../my_style/style_part/parallax.scss */
 .scene {
   padding: 0;
   margin: 0;
@@ -126,7 +45,7 @@ Trick created by Andrey https://www.script-tutorials.com/night-sky-with-twinklin
     background-position: -10000px 5000px;
   }
 }
-/* line 50, ../../my_style/style_part/parallax.scss */
+/* line 50, ../../../my_style/style_part/parallax.scss */
 .stars, .twinkling {
   position: absolute;
   top: 0;
@@ -200,7 +119,7 @@ Move Up
     animation-timing-function: ease-in;
   }
 }
-/* line 132, ../../my_style/style_part/parallax.scss */
+/* line 132, ../../../my_style/style_part/parallax.scss */
 .moveUp {
   animation: moveUp 2s infinite;
 }
@@ -264,7 +183,7 @@ Move Down
     animation-timing-function: ease-in;
   }
 }
-/* line 203, ../../my_style/style_part/parallax.scss */
+/* line 203, ../../../my_style/style_part/parallax.scss */
 .moveDown {
   animation: moveDown 2s infinite;
 }
@@ -272,12 +191,12 @@ Move Down
 /*================================================================
 PARALLAX
 ================================================================*/
-/* line 209, ../../my_style/style_part/parallax.scss */
+/* line 209, ../../../my_style/style_part/parallax.scss */
 ul#scene {
   list-style-type: none;
 }
 
-/* line 213, ../../my_style/style_part/parallax.scss */
+/* line 213, ../../../my_style/style_part/parallax.scss */
 .layer {
   display: block;
   height: 100%;
@@ -288,18 +207,18 @@ ul#scene {
   opacity: 0.75;
 }
 
-/* line 223, ../../my_style/style_part/parallax.scss */
+/* line 223, ../../../my_style/style_part/parallax.scss */
 .zoomhover {
   transition: all .2s ease-in-out;
 }
 
-/* line 227, ../../my_style/style_part/parallax.scss */
+/* line 227, ../../../my_style/style_part/parallax.scss */
 .zoomhover:hover {
   cursor: pointer;
   font-size: 72px;
 }
 
-/* line 232, ../../my_style/style_part/parallax.scss */
+/* line 232, ../../../my_style/style_part/parallax.scss */
 li.layer a {
   text-decoration: none;
   display: block;
@@ -307,7 +226,7 @@ li.layer a {
 }
 
 /* ===== CUSTOM ANIMATION FOR EACH PASSION =====*/
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(0) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -323,7 +242,7 @@ li.layer:nth-child(0) a {
   font-size: 36px;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(1) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -339,7 +258,7 @@ li.layer:nth-child(1) a {
   font-size: 48px;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(2) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -355,7 +274,7 @@ li.layer:nth-child(2) a {
   font-size: 54px;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(3) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -371,7 +290,7 @@ li.layer:nth-child(3) a {
   font-size: 36px;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(4) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -387,7 +306,7 @@ li.layer:nth-child(4) a {
   font-size: 48px;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(5) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -400,7 +319,7 @@ li.layer:nth-child(5) a {
   z-index: 0;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(6) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -413,7 +332,7 @@ li.layer:nth-child(6) a {
   z-index: 0;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(7) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -426,7 +345,7 @@ li.layer:nth-child(7) a {
   z-index: 0;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(8) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -439,7 +358,7 @@ li.layer:nth-child(8) a {
   z-index: 0;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(9) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -452,7 +371,7 @@ li.layer:nth-child(9) a {
   z-index: 0;
 }
 
-/* line 242, ../../my_style/style_part/parallax.scss */
+/* line 242, ../../../my_style/style_part/parallax.scss */
 li.layer:nth-child(10) a {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -463,46 +382,4 @@ li.layer:nth-child(10) a {
   width: 0;
   position: absolute;
   z-index: 0;
-}
-
-/* line 1, ../../my_style/style_part/mast_txt.scss */
-.mast__text {
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: type 2s steps(60, end);
-}
-
-/* line 10, ../../my_style/style_part/mast_txt.scss */
-.mast__text:nth-child(2) {
-  animation: type2 4s steps(60, end);
-}
-
-/* line 14, ../../my_style/style_part/mast_txt.scss */
-.mast__text span {
-  animation: blink 1s infinite;
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-}
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 100;
-  }
-}
-@keyframes blink {
-  to {
-    opacity: .0;
-  }
 }

@@ -13817,7 +13817,7 @@ fieldset[disabled] .mdl-textfield .mdl-textfield__label, .mdl-textfield.is-disab
 section {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Raleway","Roboto","Helvetica","Arial",sans-serif;
-  padding: 80px 0;
+  padding: 10px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -13834,10 +13834,16 @@ section {
 #passionsBox {
   width: 100%;
   min-height: 100px;
-  height: 30vh;
+  height: 70vh;
+  width: calc(100% - 81px * 2);
 }
 
-/* line 22, ../my_style/style_part/generic_style.scss */
+/* line 24, ../my_style/style_part/generic_style.scss */
+ul#passionsBox {
+  list-style-type: none;
+}
+
+/* line 28, ../my_style/style_part/generic_style.scss */
 #feedback_box {
   padding: 25px;
   text-align: left;
@@ -13845,21 +13851,13 @@ section {
   width: calc(100% - 81px * 2);
 }
 
-/* line 29, ../my_style/style_part/generic_style.scss */
-.txt-passions {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 40px;
-}
-
-/* line 36, ../my_style/style_part/generic_style.scss */
+/* line 35, ../my_style/style_part/generic_style.scss */
 .transparent {
   background: none;
   box-shadow: none;
 }
 
-/* line 41, ../my_style/style_part/generic_style.scss */
+/* line 40, ../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
@@ -13895,46 +13893,474 @@ section {
   margin: 0;
 }
 
+/* ================ VARIABLES ================*/
+/* ================== MIXINS =================*/
+/*================================================================
+Default Styles
+================================================================*/
+/* line 22, ../my_style/style_part/parallax.scss */
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+/*================================================================
+Starry Sky
+Trick created by Andrey https://www.script-tutorials.com/night-sky-with-twinkling-stars/
+================================================================*/
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+/* line 50, ../my_style/style_part/parallax.scss */
+.stars, .twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*================================================================
+Animation - Move Up and Move Down Letters
+================================================================*/
+/*================================================================
+Move Up
+================================================================*/
+@keyframes moveUp {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes moveUp {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes moveUp {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-ms-keyframes moveUp {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+/* line 132, ../my_style/style_part/parallax.scss */
+.moveUp {
+  animation: moveUp 2s infinite;
+}
+
+/*================================================================
+Move Down
+================================================================*/
+@keyframes moveDown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes moveDown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes moveDown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-ms-keyframes moveDown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+/* line 203, ../my_style/style_part/parallax.scss */
+.moveDown {
+  animation: moveDown 2s infinite;
+}
+
+/*================================================================
+PARALLAX
+================================================================*/
+/* line 209, ../my_style/style_part/parallax.scss */
+ul#scene {
+  list-style-type: none;
+}
+
+/* line 213, ../my_style/style_part/parallax.scss */
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  opacity: 0.75;
+}
+
+/* line 223, ../my_style/style_part/parallax.scss */
+.zoomhover {
+  transition: all .2s ease-in-out;
+}
+
+/* line 227, ../my_style/style_part/parallax.scss */
+.zoomhover:hover {
+  cursor: pointer;
+  font-size: 72px;
+}
+
+/* line 232, ../my_style/style_part/parallax.scss */
+li.layer a {
+  text-decoration: none;
+  display: block;
+  width: 0;
+}
+
+/* ===== CUSTOM ANIMATION FOR EACH PASSION =====*/
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(0) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+  margin-top: 0;
+  margin-left: 40%;
+  font-size: 36px;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(1) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+  margin-top: 200px;
+  margin-left: 20%;
+  font-size: 48px;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(2) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+  margin-top: 20px;
+  margin-left: 30%;
+  font-size: 54px;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(3) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+  margin-top: 50px;
+  margin-left: 60%;
+  font-size: 36px;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(4) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+  margin-top: 0;
+  margin-left: 10%;
+  font-size: 48px;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(5) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(6) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(7) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(8) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(9) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 242, ../my_style/style_part/parallax.scss */
+li.layer:nth-child(10) a {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  text-align: center;
+  width: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 1, ../my_style/style_part/mast_txt.scss */
+.mast__text {
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 2s steps(60, end);
+}
+
+/* line 10, ../my_style/style_part/mast_txt.scss */
+.mast__text:nth-child(2) {
+  animation: type2 4s steps(60, end);
+}
+
+/* line 14, ../my_style/style_part/mast_txt.scss */
+.mast__text span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
 /* line 25, ../main.scss */
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   background: black;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
-/* line 31, ../main.scss */
+/* line 32, ../main.scss */
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
 
-/* line 34, ../main.scss */
+/* line 35, ../main.scss */
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
   font-size: inherit;
 }
 
-/* line 37, ../main.scss */
+/* line 38, ../main.scss */
 .mdl-demo .mdl-layout__tab-bar-button {
   display: none;
 }
 
-/* line 40, ../main.scss */
+/* line 41, ../main.scss */
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
   display: none;
 }
 
-/* line 43, ../main.scss */
+/* line 44, ../main.scss */
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
   overflow: visible;
 }
 
-/* line 47, ../main.scss */
+/* line 48, ../main.scss */
 .mdl-demo .mdl-layout__tab-bar-container {
   height: 64px;
 }
 
-/* line 50, ../main.scss */
+/* line 51, ../main.scss */
 .mdl-demo .mdl-layout__tab-bar {
   padding: 0;
   padding-left: 16px;
@@ -13943,37 +14369,37 @@ html, body {
   width: 100%;
 }
 
-/* line 57, ../main.scss */
+/* line 58, ../main.scss */
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
   height: 64px;
   line-height: 64px;
 }
 
-/* line 61, ../main.scss */
+/* line 62, ../main.scss */
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
   background-color: white;
   height: 4px;
 }
 
-/* line 65, ../main.scss */
+/* line 66, ../main.scss */
 .mdl-demo main > .mdl-layout__tab-panel {
   padding: 8px;
   padding-top: 48px;
 }
 
-/* line 69, ../main.scss */
+/* line 70, ../main.scss */
 .mdl-demo .mdl-card {
   height: auto;
   display: flex;
   flex-direction: column;
 }
 
-/* line 74, ../main.scss */
+/* line 75, ../main.scss */
 .mdl-demo .mdl-card > * {
   height: auto;
 }
 
-/* line 77, ../main.scss */
+/* line 78, ../main.scss */
 .mdl-demo .mdl-card .mdl-card__supporting-text {
   margin: 40px;
   flex-grow: 1;
@@ -13982,38 +14408,38 @@ html, body {
   width: calc(100% - 80px);
 }
 
-/* line 84, ../main.scss */
+/* line 85, ../main.scss */
 .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 88, ../main.scss */
+/* line 89, ../main.scss */
 .mdl-demo .mdl-card__actions {
   margin: 0;
   padding: 4px 40px;
   color: inherit;
 }
 
-/* line 93, ../main.scss */
+/* line 94, ../main.scss */
 .mdl-demo .mdl-card__actions a {
   color: #00BCD4;
   margin: 0;
 }
 
-/* line 97, ../main.scss */
+/* line 98, ../main.scss */
 .mdl-demo .mdl-card__actions a:hover,
 .mdl-demo .mdl-card__actions a:active {
   color: inherit;
   background-color: transparent;
 }
 
-/* line 102, ../main.scss */
+/* line 103, ../main.scss */
 .mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* line 105, ../main.scss */
+/* line 106, ../main.scss */
 .mdl-demo #add {
   position: absolute;
   right: 40px;
@@ -14021,40 +14447,40 @@ html, body {
   z-index: 999;
 }
 
-/* line 112, ../main.scss */
+/* line 113, ../main.scss */
 .mdl-demo .mdl-layout__content section:not(:last-of-type) {
   position: relative;
   margin-bottom: 48px;
 }
 
-/* line 116, ../main.scss */
+/* line 117, ../main.scss */
 .mdl-demo section.section--center {
   max-width: 860px;
 }
 
-/* line 119, ../main.scss */
+/* line 120, ../main.scss */
 .mdl-demo #features section.section--center {
   max-width: 620px;
 }
 
-/* line 122, ../main.scss */
+/* line 123, ../main.scss */
 .mdl-demo section > header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 127, ../main.scss */
+/* line 128, ../main.scss */
 .mdl-demo section > .section__play-btn {
   min-height: 200px;
 }
 
-/* line 130, ../main.scss */
+/* line 131, ../main.scss */
 .mdl-demo section > header > .material-icons {
   font-size: 3rem;
 }
 
-/* line 133, ../main.scss */
+/* line 134, ../main.scss */
 .mdl-demo section > button {
   position: absolute;
   z-index: 99;
@@ -14062,7 +14488,7 @@ html, body {
   right: 8px;
 }
 
-/* line 139, ../main.scss */
+/* line 140, ../main.scss */
 .mdl-demo section .section__circle {
   display: flex;
   align-items: center;
@@ -14071,26 +14497,26 @@ html, body {
   flex-shrink: 1;
 }
 
-/* line 146, ../main.scss */
+/* line 147, ../main.scss */
 .mdl-demo section .section__text {
   flex-grow: 1;
   flex-shrink: 0;
   padding-top: 8px;
 }
 
-/* line 151, ../main.scss */
+/* line 152, ../main.scss */
 .mdl-demo section .section__text h5 {
   font-size: inherit;
   margin: 0;
   margin-bottom: 0.5em;
 }
 
-/* line 156, ../main.scss */
+/* line 157, ../main.scss */
 .mdl-demo section .section__text a {
   text-decoration: none;
 }
 
-/* line 159, ../main.scss */
+/* line 160, ../main.scss */
 .mdl-demo section .section__circle-container > .section__circle-container__circle {
   width: 64px;
   height: 64px;
@@ -14098,7 +14524,7 @@ html, body {
   margin: 8px 0;
 }
 
-/* line 165, ../main.scss */
+/* line 166, ../main.scss */
 .mdl-demo section.section--footer .section__circle--big {
   width: 100px;
   height: 100px;
@@ -14106,7 +14532,7 @@ html, body {
   margin: 8px 32px;
 }
 
-/* line 171, ../main.scss */
+/* line 172, ../main.scss */
 .mdl-demo .is-small-screen section.section--footer .section__circle--big {
   width: 50px;
   height: 50px;
@@ -14114,38 +14540,38 @@ html, body {
   margin: 8px 16px;
 }
 
-/* line 177, ../main.scss */
+/* line 178, ../main.scss */
 .mdl-demo section.section--footer {
   padding: 64px 0;
   margin: 0 -8px -8px -8px;
 }
 
-/* line 181, ../main.scss */
+/* line 182, ../main.scss */
 .mdl-demo section.section--center .section__text:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 
-/* line 184, ../main.scss */
+/* line 185, ../main.scss */
 .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
 }
 
-/* line 187, ../main.scss */
+/* line 188, ../main.scss */
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
   background-color: white;
 }
 
-/* line 190, ../main.scss */
+/* line 191, ../main.scss */
 .mdl-demo #features section {
   margin-bottom: 72px;
 }
 
-/* line 193, ../main.scss */
+/* line 194, ../main.scss */
 .mdl-demo #features h4, #features h5 {
   margin-bottom: 16px;
 }
 
-/* line 196, ../main.scss */
+/* line 197, ../main.scss */
 .mdl-demo .toc {
   border-left: 4px solid #C1EEF4;
   margin: 24px;
@@ -14155,13 +14581,13 @@ html, body {
   flex-direction: column;
 }
 
-/* line 204, ../main.scss */
+/* line 205, ../main.scss */
 .mdl-demo .toc h4 {
   font-size: 0.9rem;
   margin-top: 0;
 }
 
-/* line 208, ../main.scss */
+/* line 209, ../main.scss */
 .mdl-demo .toc a {
   color: #4DD0E1;
   text-decoration: none;
@@ -14170,7 +14596,7 @@ html, body {
   display: block;
 }
 
-/* line 215, ../main.scss */
+/* line 216, ../main.scss */
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }

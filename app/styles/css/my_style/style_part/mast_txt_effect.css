@@ -1,20 +1,28 @@
 /*
-Error: Undefined variable: "$txt_color_passions".
-        on line 2 of ../app/styles/my_style/style_part/generic_style.scss
+Error: Undefined mixin 'bg-overlay'.
+        on line 9 of ../app/styles/my_style/style_part/mast_txt_effect.scss, in `bg-overlay'
+        from line 9 of ../app/styles/my_style/style_part/mast_txt_effect.scss
 
-1: section{
-2:   color: $txt_color_passions;
-3:   font-family: "Raleway","Roboto","Helvetica","Arial",sans-serif;
-4:   padding: 10px 0;
-5:   margin-left: auto;
-6:   margin-right: auto;
-7: }
+4:   align-items: center;
+5:   width: 100%;
+6:   height: 100vh;
+7:   color: #fff;
+8:   background-color: #111;
+9:   @include bg-overlay(#111, 0.9);  
+10:   
+11:   &__bg{
+12:     position: absolute;
+13:     top: 0;
+14:     left: 0;
 
 Backtrace:
-../app/styles/my_style/style_part/generic_style.scss:2
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+../app/styles/my_style/style_part/mast_txt_effect.scss:9:in `bg-overlay'
+../app/styles/my_style/style_part/mast_txt_effect.scss:9
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -57,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$txt_color_passions\".\A         on line 2 of ../app/styles/my_style/style_part/generic_style.scss\A \A 1: section{\A 2:   color: $txt_color_passions;\A 3:   font-family: \"Raleway\",\"Roboto\",\"Helvetica\",\"Arial\",sans-serif;\A 4:   padding: 10px 0;\A 5:   margin-left: auto;\A 6:   margin-right: auto;\A 7: }"; }
+  content: "Error: Undefined mixin 'bg-overlay'.\A         on line 9 of ../app/styles/my_style/style_part/mast_txt_effect.scss, in `bg-overlay'\A         from line 9 of ../app/styles/my_style/style_part/mast_txt_effect.scss\A \A 4:   align-items: center;\A 5:   width: 100%;\A 6:   height: 100vh;\A 7:   color: #fff;\A 8:   background-color: #111;\A 9:   @include bg-overlay(#111, 0.9);  \A 10:   \A 11:   &__bg{\A 12:     position: absolute;\A 13:     top: 0;\A 14:     left: 0;"; }
