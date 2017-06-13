@@ -13,11 +13,16 @@ section{
   margin: 0px;
 }
 
+#about_you{
+  opacity: 0;
+}
+
 #passionsBox {
   width: 100%;
   min-height: 100px;
-  height: 70vh;
+  height: 450px;
   width: calc(100% - 81px * 2);
+  overflow: hidden;
 }
 
 
@@ -25,11 +30,16 @@ ul#passionsBox {
 	list-style-type:none;
 }
 
-#feedback_box{
+#feedback{
   padding: 25px;
-  text-align: left;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   width: calc(100% - 81px * 2);
+}
+
+#feedback_box{
+  font-size: 40px;
+  line-height: 0.9;
+  width: 100%;
 }
 
 .transparent{

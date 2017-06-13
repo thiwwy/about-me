@@ -496,3 +496,5 @@
 }());
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
+  var scene_2 = document.getElementById('scene_2');
+	var parallax = new Parallax(scene_2);

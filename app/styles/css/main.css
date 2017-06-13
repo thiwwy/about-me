@@ -13831,33 +13831,45 @@ section {
 }
 
 /* line 16, ../my_style/style_part/generic_style.scss */
+#about_you {
+  opacity: 0;
+}
+
+/* line 20, ../my_style/style_part/generic_style.scss */
 #passionsBox {
   width: 100%;
   min-height: 100px;
-  height: 70vh;
+  height: 450px;
   width: calc(100% - 81px * 2);
+  overflow: hidden;
 }
 
-/* line 24, ../my_style/style_part/generic_style.scss */
+/* line 29, ../my_style/style_part/generic_style.scss */
 ul#passionsBox {
   list-style-type: none;
 }
 
-/* line 28, ../my_style/style_part/generic_style.scss */
-#feedback_box {
+/* line 33, ../my_style/style_part/generic_style.scss */
+#feedback {
   padding: 25px;
-  text-align: left;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   width: calc(100% - 81px * 2);
 }
 
-/* line 35, ../my_style/style_part/generic_style.scss */
+/* line 39, ../my_style/style_part/generic_style.scss */
+#feedback_box {
+  font-size: 40px;
+  line-height: 0.9;
+  width: 100%;
+}
+
+/* line 45, ../my_style/style_part/generic_style.scss */
 .transparent {
   background: none;
   box-shadow: none;
 }
 
-/* line 40, ../my_style/style_part/generic_style.scss */
+/* line 50, ../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
@@ -14279,45 +14291,30 @@ li.layer:nth-child(10) a {
   z-index: 0;
 }
 
-/* line 1, ../my_style/style_part/mast_txt.scss */
+/* line 3, ../my_style/style_part/mast_txt.scss */
 .mast__text {
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: type 2s steps(60, end);
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
-/* line 10, ../my_style/style_part/mast_txt.scss */
+/* line 11, ../my_style/style_part/mast_txt.scss */
 .mast__text:nth-child(2) {
-  animation: type2 4s steps(60, end);
+  animation: blink 4s steps(60, end);
 }
 
-/* line 14, ../my_style/style_part/mast_txt.scss */
-.mast__text span {
-  animation: blink 1s infinite;
-}
-
-@keyframes type {
+@keyframes fadein {
   from {
-    width: 0;
+    opacity: 0;
   }
-}
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 100;
-  }
-}
-@keyframes blink {
   to {
-    opacity: .0;
+    opacity: 1;
   }
 }
 /* line 25, ../main.scss */

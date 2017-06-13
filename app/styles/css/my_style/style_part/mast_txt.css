@@ -1,41 +1,26 @@
-/* line 1, ../../../my_style/style_part/mast_txt.scss */
+/* line 3, ../../../my_style/style_part/mast_txt.scss */
 .mast__text {
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: type 2s steps(60, end);
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
-/* line 10, ../../../my_style/style_part/mast_txt.scss */
+/* line 11, ../../../my_style/style_part/mast_txt.scss */
 .mast__text:nth-child(2) {
-  animation: type2 4s steps(60, end);
+  animation: blink 4s steps(60, end);
 }
 
-/* line 14, ../../../my_style/style_part/mast_txt.scss */
-.mast__text span {
-  animation: blink 1s infinite;
-}
-
-@keyframes type {
+@keyframes fadein {
   from {
-    width: 0;
+    opacity: 0;
   }
-}
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 100;
-  }
-}
-@keyframes blink {
   to {
-    opacity: .0;
+    opacity: 1;
   }
 }
