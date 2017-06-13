@@ -1,15 +1,15 @@
 doctype html
 html(lang='')
-  include partials/generic/head
-  body.main
-    #gradient.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
-      include partials/generic/header-tabs
+  include partials/head
+  body#gradient.main
+    #page.mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      include partials/header-tabs
       main.mdl-layout__content
         .page-content
-          include partials/generic/about_me
+          include partials/about_me
 
-          include partials/generic/about_you
+          include partials/about_you
 
-      include partials/generic/footer
+      include partials/footer
 
-    include partials/generic/scripts
+    include partials/scripts

@@ -1,0 +1,26 @@
+/* line 3, ../../../my_style/style_part/animation.scss */
+.mast__text {
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+/* line 11, ../../../my_style/style_part/animation.scss */
+.mast__text:nth-child(2) {
+  animation: blink 4s steps(60, end);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

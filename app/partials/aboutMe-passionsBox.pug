@@ -1,18 +1,18 @@
-section#passionsBoxYou.mdl-typography--text-center
+section#passionsBox.mdl-typography--text-center
     
-    ul#scene_2
+    ul#scene.fadeIn
         - var data_depth = 0.10
         - for(var i=0; i<passions.length; i++)
             //* Random number -> 0 = moveUp 1 = MoveDown */
             - var random = Math.floor(Math.random() * (2))
             li.layer(data-depth= data_depth class = "layer_"+ i)
                 - if(random == 0)
-                    a.txt-passions(onclick = "AboutYouPassions( ' " + passions[i].description + " ' )" class="moveUp" )
+                    a.txt-passions(onclick = "AboutMePassions( " + JSON.stringify(passions[i]) + ")" class="moveUp" )
                         span.zoomhover
                             = passions[i].name
 
                 - if(random == 1)
-                    a.txt-passions(onclick = "AboutYouPassions( ' " + passions[i].description + " ' )" class="moveDown" )
+                    a.txt-passions(onclick = "AboutMePassions( " + JSON.stringify(passions[i]) + ")" class="moveDown" )
                         span.zoomhover
                             = passions[i].name
 

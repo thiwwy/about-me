@@ -1,15 +1,11 @@
 $transition: 1s;
 
-.mast__text{
+.fadeIn{
   -webkit-animation: fadein $transition; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein $transition; /* Firefox < 16 */
   -ms-animation: fadein $transition; /* Internet Explorer */
   -o-animation: fadein $transition; /* Opera < 12.1 */
   animation: fadein $transition;
-}
-
-.mast__text:nth-child(2){
-  animation: blink 4s steps(60, end);
 }
 
 @keyframes fadein {

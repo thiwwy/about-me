@@ -13831,12 +13831,17 @@ section {
 }
 
 /* line 16, ../my_style/style_part/generic_style.scss */
-#about_you {
+#page {
   opacity: 0;
 }
 
 /* line 20, ../my_style/style_part/generic_style.scss */
-#passionsBox {
+#about_you {
+  opacity: 0;
+}
+
+/* line 24, ../my_style/style_part/generic_style.scss */
+#passionsBox, #passionsBoxYou {
   width: 100%;
   min-height: 100px;
   height: 450px;
@@ -13844,32 +13849,39 @@ section {
   overflow: hidden;
 }
 
-/* line 29, ../my_style/style_part/generic_style.scss */
+/* line 33, ../my_style/style_part/generic_style.scss */
 ul#passionsBox {
   list-style-type: none;
 }
 
-/* line 33, ../my_style/style_part/generic_style.scss */
-#feedback {
+/* line 37, ../my_style/style_part/generic_style.scss */
+#feedback, #feedbackAboutYou {
   padding: 25px;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   width: calc(100% - 81px * 2);
 }
 
-/* line 39, ../my_style/style_part/generic_style.scss */
+/* line 43, ../my_style/style_part/generic_style.scss */
 #feedback_box {
   font-size: 40px;
   line-height: 0.9;
   width: 100%;
 }
 
-/* line 45, ../my_style/style_part/generic_style.scss */
+/* line 49, ../my_style/style_part/generic_style.scss */
+#feedbackAboutYou_box {
+  width: 100%;
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* line 55, ../my_style/style_part/generic_style.scss */
 .transparent {
   background: none;
   box-shadow: none;
 }
 
-/* line 50, ../my_style/style_part/generic_style.scss */
+/* line 60, ../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
@@ -14291,8 +14303,8 @@ li.layer:nth-child(10) a {
   z-index: 0;
 }
 
-/* line 3, ../my_style/style_part/mast_txt.scss */
-.mast__text {
+/* line 3, ../my_style/style_part/animations.scss */
+.fadeIn {
   -webkit-animation: fadein 1s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s;
@@ -14302,11 +14314,6 @@ li.layer:nth-child(10) a {
   -o-animation: fadein 1s;
   /* Opera < 12.1 */
   animation: fadein 1s;
-}
-
-/* line 11, ../my_style/style_part/mast_txt.scss */
-.mast__text:nth-child(2) {
-  animation: blink 4s steps(60, end);
 }
 
 @keyframes fadein {

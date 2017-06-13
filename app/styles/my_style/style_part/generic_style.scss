@@ -13,11 +13,15 @@ section{
   margin: 0px;
 }
 
+#page{
+  opacity: 0;
+}
+
 #about_you{
   opacity: 0;
 }
 
-#passionsBox {
+#passionsBox, #passionsBoxYou {
   width: 100%;
   min-height: 100px;
   height: 450px;
@@ -30,7 +34,7 @@ ul#passionsBox {
 	list-style-type:none;
 }
 
-#feedback{
+#feedback, #feedbackAboutYou{
   padding: 25px;
   border-top: 2px solid rgba(255, 255, 255, 0.75);
   width: calc(100% - 81px * 2);
@@ -40,6 +44,12 @@ ul#passionsBox {
   font-size: 40px;
   line-height: 0.9;
   width: 100%;
+}
+
+#feedbackAboutYou_box{
+  width: 100%;
+  font-size: 28px;
+  line-height: 1;
 }
 
 .transparent{
