@@ -50,10 +50,14 @@ ul#passionsBox {
   width: 100%;
 }
 
-#feedbackAboutYou_box{
+#feedbackAboutYou_box, #aboutYouInstruction{
   width: 100%;
   font-size: 28px;
   line-height: 1;
+}
+
+#feedbackAboutYou_box{
+  display: none;
 }
 
 .transparent{

@@ -50,9 +50,15 @@ function removePassionFromSelected(id){
     document.getElementById(id).remove();
 
     /** Updating the Counter */
-    var txtBox = document.getElementById("feedbackAboutYou_box");
+    var txtBox = document.getElementById("aboutYouInstruction");
     var txt = txtBox.innerHTML;
     var nPassions = Number(txt.match( /\d/g));
+
+    if(nPassions == 0){
+        document.getElementById("feedbackAboutYou_box").style.display = "none";
+        document.getElementById("aboutYouInstruction").style.display = "block";
+    }
+
     nPassions ++;
     txt = txt.replace( /\d/g, nPassions);
     txtBox.innerHTML = txt;
@@ -69,7 +75,7 @@ function addPassionInSelected(obj){
     var id = "selected_" + obj.id;
 
     /** Checking The counter */
-    var txtBox = document.getElementById("feedbackAboutYou_box");
+    var txtBox = document.getElementById("aboutYouInstruction");
     var txt = txtBox.innerHTML;
     var nPassions = Number(txt.match( /\d/g));
     
@@ -111,9 +117,23 @@ function addPassionInSelected(obj){
 
 function matchFeedback(){
     var totMatch = 0;
+    var feedbackBox = document.getElementById("feedbackAboutYou_box");
+    var instructionBox = document.getElementById("aboutYouInstruction");
+    var feedback = [
+        "Nice! We have something in common. Nice to meet you! :O",
+        "Cool! We have many things in common. I am pleased to meet you! :)",
+        "Wow! We have a lot in common! Happy to meet you! :D"
+    ]
 
     for(var i=0; i<listPassionsSelected.length ; i++)
         totMatch += parseInt(listPassionsSelected[i].match);
+
+    if(totMatch<33) feedbackBox.innerHTML = feedback[0];
+    if(totMatch>=33 && totMatch<=66) feedbackBox.innerHTML = feedback[1];
+    if(totMatch>66) feedbackBox.innerHTML = feedback[2];
+    
+    feedbackBox.style.display = "block";
+    instructionBox.style.display = "none";
 
 }
 

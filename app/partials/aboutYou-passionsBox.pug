@@ -5,7 +5,7 @@ section#passionsBoxYou.mdl-typography--text-center
         - for(var i=0; i<passions.length; i++)
             //* Random number -> 0 = moveUp 1 = MoveDown */
             - var random = Math.floor(Math.random() * (2))
-            li.layer(data-depth= data_depth class = "layer_"+ i)
+            li.layer(data-depth = data_depth class = "layer_"+ i)
                 - if(random == 0)
                     a.txt-passions(onclick = "AboutYouPassions( " + JSON.stringify(passions[i]) + ")" class="moveUp" id = "yourPassion_" + passions[i].id)
                         span.zoomhover
