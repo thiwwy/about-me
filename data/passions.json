@@ -1,47 +1,79 @@
 {
   "passions" : [{
     "id": "1",
-    "name": "Milan",
-    "description": "I love Milan",
-    "match": "10",
+    "name": "Italy",
+    "description": "Italy is where I born and where I spent my childhood. I used to live in San Vittore Olona, a little town close to Milan.",
+    "match": "12",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "2",
     "name": "Malta",
-    "description": "I lived in Malta",
-    "match": "10",
+    "description": "In 2014 I moved in Malta because of working and I had been living here for almost 2 years. What can I say about this island? It's sunny, hot but also very small.",
+    "match": "12",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "3",
-    "name": "Malta",
-    "description": "I lived in Malta",
-    "match": "10",
+    "name": "London",
+    "description": "In November 2015 I moved in London. I always dreamed to have a job in UK and I am so happy that I have accomplished my dream!",
+    "match": "12",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "4",
-    "name": "Malta",
-    "description": "I lived in Malta",
+    "name": "Japan",
+    "description": "Japan is one of the place that I like most. I spent two weeks here in May 2017 and being here was a dream. I really love the japanese culture, the food and the environment.",
     "match": "10",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "5",
-    "name": "Malta",
-    "description": "I lived in Malta",
+    "name": "Games",
+    "description": "I love Games, no matters if are video games or board games. During my time in University i also designed my own board game with a group of friends.",
     "match": "10",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "6",
-    "name": "London",
+    "name": "Travelling",
+    "description": "I love travelling, especially walking around a place. I believe that travelling is the best way to learn something new.",
+    "match": "10",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "7",
+    "name": "UX",
+    "description": "",
+    "match": "10",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "8",
+    "name": "Travelling",
+    "description": "I love Games, no matters if are video games or board games. During my time in University i also designed my own board game with a group of friends.",
+    "match": "10",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "6",
+    "name": "Games",
+    "description": "I love Games, no matters if are video games or board games. During my time in University i also designed my own board game with a group of friends.",
+    "match": "10",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "z",
+    "name": "6",
     "description": "I live in London",
     "match": "10",
     "images" : ["img_1_1", "img_1_2"]
