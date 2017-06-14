@@ -48,31 +48,49 @@ ul#passionsBox {
 }
 
 /* line 43, ../../my_style/style_part/generic_style.scss */
+#feedbackAboutYou {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+/* line 47, ../../my_style/style_part/generic_style.scss */
 #feedback_box {
   font-size: 40px;
   line-height: 0.9;
   width: 100%;
 }
 
-/* line 49, ../../my_style/style_part/generic_style.scss */
+/* line 53, ../../my_style/style_part/generic_style.scss */
 #feedbackAboutYou_box {
   width: 100%;
   font-size: 28px;
   line-height: 1;
 }
 
-/* line 55, ../../my_style/style_part/generic_style.scss */
+/* line 59, ../../my_style/style_part/generic_style.scss */
 .transparent {
   background: none;
   box-shadow: none;
 }
 
-/* line 60, ../../my_style/style_part/generic_style.scss */
+/* line 64, ../../my_style/style_part/generic_style.scss */
 .my-footer {
   color: rgba(255, 255, 255, 0.75);
   height: 30px;
   padding: 16px;
   padding-left: 55px;
+}
+
+/* line 71, ../../my_style/style_part/generic_style.scss */
+.selected {
+  opacity: 0.25;
+}
+
+/* line 75, ../../my_style/style_part/generic_style.scss */
+.addedInBox {
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 /* line 1, ../../my_style/style_part/side_panel.scss */

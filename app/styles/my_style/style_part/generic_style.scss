@@ -36,8 +36,12 @@ ul#passionsBox {
 
 #feedback, #feedbackAboutYou{
   padding: 25px;
-  border-top: 2px solid rgba(255, 255, 255, 0.75);
+  border-top: 2px solid $borders_color;
   width: calc(100% - 81px * 2);
+}
+
+#feedbackAboutYou{
+  border-bottom: 2px solid $borders_color;
 }
 
 #feedback_box{
@@ -62,4 +66,15 @@ ul#passionsBox {
   height: 30px;
   padding: 16px;
   padding-left: 55px;
+}
+
+.selected{
+  opacity: 0.25;
+}
+
+.addedInBox{
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  cursor : pointer;
 }
