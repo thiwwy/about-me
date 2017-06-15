@@ -16,4 +16,10 @@ section#passionsBox.mdl-typography--text-center
                         span.zoomhover
                             = passions[i].name
 
-            - data_depth += 0.30
+            - var random = Math.floor(Math.random() * (2))
+                - if(random == 0)
+                    - data_depth += 0.5
+            
+            - var random = Math.floor(Math.random() * (2))
+                - if(random == 1)
+                    - data_depth += 0.10

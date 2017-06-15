@@ -1,385 +1,63 @@
-/* ================ VARIABLES ================*/
-/* ================== MIXINS =================*/
-/*================================================================
-Default Styles
-================================================================*/
-/* line 22, ../../../my_style/style_part/parallax.scss */
-.scene {
-  padding: 0;
-  margin: 0;
-}
+/*
+Error: Undefined variable: "$passionsHeight".
+        on line 219 of ../app/styles/my_style/style_part/parallax.scss
 
-/*================================================================
-Starry Sky
-Trick created by Andrey https://www.script-tutorials.com/night-sky-with-twinkling-stars/
-================================================================*/
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-@-webkit-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-@-moz-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-@-ms-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-/* line 50, ../../../my_style/style_part/parallax.scss */
-.stars, .twinkling {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
+214: $costant-bottom: 25;
+215: 
+216: $max_animation: 15;
+217: $maxColumns: 5;
+218: 
+219: $rangeLine: round($passionsHeight / ( round($max_animation / $maxColumns) ));
+220: $rangeColumn: round(100% / $maxColumns );
+221: $line: 0; 
+222: 
+223: //$passionsHeight
+224: 
 
-/*================================================================
-Animation - Move Up and Move Down Letters
-================================================================*/
-/*================================================================
-Move Up
-================================================================*/
-@keyframes moveUp {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, 10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-@-webkit-keyframes moveUp {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, 10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-@-moz-keyframes moveUp {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, 10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-@-ms-keyframes moveUp {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, 10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-/* line 132, ../../../my_style/style_part/parallax.scss */
-.moveUp {
-  animation: moveUp 2s infinite;
-}
-
-/*================================================================
-Move Down
-================================================================*/
-@keyframes moveDown {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, -10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-@-webkit-keyframes moveDown {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, -10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-@-moz-keyframes moveDown {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, -10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-@-ms-keyframes moveDown {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: translate3d(0px, -10px, 0px);
-    animation-timing-function: ease-out;
-  }
-  100% {
-    transform: translate3d(0px, 0px, 0px);
-    animation-timing-function: ease-in;
-  }
-}
-/* line 203, ../../../my_style/style_part/parallax.scss */
-.moveDown {
-  animation: moveDown 2s infinite;
-}
-
-/*================================================================
-PARALLAX
-================================================================*/
-/* line 209, ../../../my_style/style_part/parallax.scss */
-ul#scene {
-  list-style-type: none;
-}
-
-/* line 213, ../../../my_style/style_part/parallax.scss */
-.layer {
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  opacity: 0.75;
-}
-
-/* line 223, ../../../my_style/style_part/parallax.scss */
-.zoomhover {
-  transition: all .2s ease-in-out;
-}
-
-/* line 227, ../../../my_style/style_part/parallax.scss */
-.zoomhover:hover {
-  cursor: pointer;
-  font-size: 72px;
-}
-
-/* line 232, ../../../my_style/style_part/parallax.scss */
-li.layer a {
-  text-decoration: none;
-  display: block;
-  width: 0;
-}
-
-/* ===== CUSTOM ANIMATION FOR EACH PASSION =====*/
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(0) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-  margin-top: 0;
-  margin-left: 40%;
-  font-size: 36px;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(1) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-  margin-top: 200px;
-  margin-left: 20%;
-  font-size: 48px;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(2) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-  margin-top: 20px;
-  margin-left: 30%;
-  font-size: 54px;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(3) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-  margin-top: 50px;
-  margin-left: 60%;
-  font-size: 36px;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(4) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-  margin-top: 0;
-  margin-left: 10%;
-  font-size: 48px;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(5) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(6) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(7) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(8) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(9) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-}
-
-/* line 242, ../../../my_style/style_part/parallax.scss */
-li.layer:nth-child(10) a {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  text-align: center;
-  width: 0;
-  position: absolute;
-  z-index: 0;
-}
+Backtrace:
+../app/styles/my_style/style_part/parallax.scss:219
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/operation.rb:64:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:124:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:400:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$passionsHeight\".\A         on line 219 of ../app/styles/my_style/style_part/parallax.scss\A \A 214: $costant-bottom: 25;\A 215: \A 216: $max_animation: 15;\A 217: $maxColumns: 5;\A 218: \A 219: $rangeLine: round($passionsHeight / ( round($max_animation / $maxColumns) ));\A 220: $rangeColumn: round(100% / $maxColumns );\A 221: $line: 0; \A 222: \A 223: //$passionsHeight\A 224: "; }

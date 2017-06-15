@@ -33,49 +33,91 @@
 
   {
     "id": "5",
-    "name": "Games",
-    "description": "I love Games, no matters if are video games or board games. During my time in University i also designed my own board game with a group of friends.",
+    "name": "UX",
+    "description": "I have been intersted to technology and communication since I was a little girl and this passion is the reason because I chose my career path and the field of studies. Now I am working as UX and Software Engineer in Zebra Technologies.",
     "match": "10",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "6",
-    "name": "Travelling",
-    "description": "I love travelling, especially walking around a place. I believe that travelling is the best way to learn something new.",
+    "name": "Design",
+    "description": "I have a Design background because I studied Communication Design in the University. My priority is to develop Software and apps thinking about the best experience for the user.",
     "match": "10",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "7",
-    "name": "UX",
-    "description": "",
-    "match": "10",
+    "name": "Games",
+    "description": "I love Games, no matters if are video games or board games. During my time in University I also designed my own board game with a group of friends.",
+    "match": "5",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
     "id": "8",
     "name": "Travelling",
-    "description": "I love Games, no matters if are video games or board games. During my time in University i also designed my own board game with a group of friends.",
-    "match": "10",
+    "description": "I love travelling, especially walking around a place. I believe that travelling is the best way to learn something new.",
+    "match": "5",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
-    "id": "6",
-    "name": "Games",
-    "description": "I love Games, no matters if are video games or board games. During my time in University i also designed my own board game with a group of friends.",
-    "match": "10",
+    "id": "9",
+    "name": "Food",
+    "description": "As italian I love food, especially fresh fish and tropical fruit. But I hate artichokes... no matters how they have been cooked.",
+    "match": "5",
     "images" : ["img_1_1", "img_1_2"]
   },
 
   {
-    "id": "z",
-    "name": "6",
-    "description": "I live in London",
-    "match": "10",
+    "id": "10",
+    "name": "Gym",
+    "description": "Because I love good food I try to stay in fit going to the gym. My favourite training is BoxFit!",
+    "match": "4",
     "images" : ["img_1_1", "img_1_2"]
-  }]
+  },
+
+  {
+    "id": "11",
+    "name": "Movies",
+    "description": "Watching movies is the best way to relax myself. My favourite movie is 'the one that I have not seen yet'",
+    "match": "4",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "12",
+    "name": "Cartoons",
+    "description": "I grew up watching Walt Disney's cartoons and I feel them as part of me. Now I love watching Anime (japanese cartoons) and I am a big fan of the Studio Ghibli.",
+    "match": "4",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "13",
+    "name": "Music",
+    "description": "I like different kind of music but I have a true devotion for Rock. My favourite bands (for now) are 'The Muse' and 'The Imagine Dragons'.",
+    "match": "2",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+  
+  {
+    "id": "14",
+    "name": "Drawing",
+    "description": "One of my hobbies is drawing and since I love graphics vectors my favourite tool is Illustrator.",
+    "match": "2",
+    "images" : ["img_1_1", "img_1_2"]
+  },
+
+  {
+    "id": "15",
+    "name": "Photography",
+    "description": "I love photography! Sometimes you can find me in the early morning taking some shots!",
+    "match": "2",
+    "images" : ["img_1_1", "img_1_2"]
+  }
+
+  ]
 }

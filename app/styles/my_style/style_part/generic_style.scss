@@ -24,7 +24,7 @@ section{
 #passionsBox, #passionsBoxYou {
   width: 100%;
   min-height: 100px;
-  height: 450px;
+  height: $passionsHeight;
   width: calc(100% - 81px * 2);
   overflow: hidden;
 }

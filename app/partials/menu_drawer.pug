@@ -14,11 +14,11 @@
     i.material-icons.md-18 &#xE0BE;
     = "  " + author.email
   //Web Site
-  a.mdl-navigation__link(href='#')
+  a.mdl-navigation__link(href= author.website target="blank")
     i.material-icons.md-18 &#xE894;
     = "  " + author.website
   //issuu
-  a.mdl-navigation__link(href=author.issuu target="blank")
+  //a.mdl-navigation__link(href=author.issuu target="blank")
     i.icon.icon-issuu-01
-    //i.material-icons.md-18(style= "color: red") &#xE0BE;
+    i.material-icons.md-18(style= "color: red") &#xE0BE;
     = "  " + author.issuu
