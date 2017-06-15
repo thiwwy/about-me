@@ -125,13 +125,16 @@ function matchFeedback(){
         "Wow! We have a lot in common! Happy to meet you! :D"
     ]
 
-    for(var i=0; i<listPassionsSelected.length ; i++)
+    for(var i=0; i<listPassionsSelected.length ; i++){
         totMatch += parseInt(listPassionsSelected[i].match);
+        //console.log(listPassionsSelected[i].match);
+        }
 
-    if(totMatch<33) feedbackBox.innerHTML = feedback[0];
-    if(totMatch>=33 && totMatch<=66) feedbackBox.innerHTML = feedback[1];
-    if(totMatch>66) feedbackBox.innerHTML = feedback[2];
+    if(totMatch<25) feedbackBox.innerHTML = feedback[0];
+    if(totMatch>=25 && totMatch<=45) feedbackBox.innerHTML = feedback[1];
+    if(totMatch>45) feedbackBox.innerHTML = feedback[2];
     
+    //console.log(totMatch);
     feedbackBox.style.display = "block";
     instructionBox.style.display = "none";
 
